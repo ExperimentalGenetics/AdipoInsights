@@ -1,0 +1,37 @@
+{
+  "tissue_type": "sWAT",
+  "shape_ratio_thresh": 2.2,
+  "max_20xsize": 88000,
+  "device": "cpu",
+  "num_tissues": 1,
+  "s1": {
+    "preprocessing": {
+      "img_size": 1024
+    },
+    "model_kwargs": {
+      "encoder": "efficientnet-b0",
+      "classes": 2,
+      "lr": 0.0003,
+      "encoder_lr": 1e-05
+    }
+  },
+  "s2": {
+    "model_kwargs": {
+      "encoder": "efficientnet-b0",
+      "classes": 3,
+      "lr": 0.0003,
+      "encoder_lr": 1e-05
+    }
+  },
+  "edge_detector": "canny",
+  "cell_segmentation_interval_binary": [
+    100,
+    100000000
+  ],
+  "cell_segmentation_interval_binary_inv": [
+    300,
+    200000
+  ],
+  "min_adipocyte_intensity": 0.55,
+  "outlier_threshold": -0.45
+}

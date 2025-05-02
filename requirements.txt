@@ -1,0 +1,46 @@
+# Core Scientific Libraries
+numpy~=1.24
+pandas~=1.5
+scikit-learn==1.2.1 #~=1.2
+scikit-image #~=0.20
+statsmodels #~=0.14
+pingouin~=0.5
+scikit_posthocs~=0.7
+numba
+
+# Image Processing & Deep Learning
+opencv-python~=4.5
+segmentation-models-pytorch==0.1.0
+monai~=0.2
+batchgenerators~=0.25
+patchify
+tifffile~=2020.7
+Pillow~=10.0
+rising~=0.2
+imagecodecs==2022.12.24  # or update if needed
+openslide-python
+openslide-bin
+
+# Visualization
+matplotlib~=3.6
+seaborn~=0.12
+plotly
+dash~=2.17
+tqdm~=4.63
+p_tqdm~=1.4
+
+# Database & Backend
+mysql-connector-python
+werkzeug~=2.2
+PyYAML  # Consider specifying a version for stability
+
+# Jupyter & Notebook Extensions
+ipykernel
+jupyter
+RISE
+
+# Logging, Monitoring & Streamlit
+tensorboard~=2.12
+pytorch_lightning~=1.5
+streamlit~=1.29
+watchdog~=3.0

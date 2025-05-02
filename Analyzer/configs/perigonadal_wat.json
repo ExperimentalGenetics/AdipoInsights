@@ -1,0 +1,31 @@
+{
+  "tissue_type": "pWAT",
+  "shape_ratio_thresh":1.9, 
+  "max_20xsize": 82000,
+  "num_tissues": 1,
+  "device":"cpu",
+  "s1": {
+    "preprocessing": {
+      "img_size": 1024
+    },
+    "model_kwargs": {
+      "encoder": "efficientnet-b0",
+      "classes": 3,
+      "lr": 0.0003,
+      "encoder_lr": 1e-05
+    }
+  },
+  "edge_detector": "canny",
+  "cell_segmentation_interval_binary": [
+    1000,
+    1000000000000
+  ],
+  "cell_segmentation_interval_binary_inv": [
+    2200,
+    300000
+  ],
+  "min_adipocyte_intensity":0.6,
+  "outlier_threshold": -0.45
+}
+
+
