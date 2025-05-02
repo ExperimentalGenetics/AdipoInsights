@@ -1,6 +1,6 @@
 # **AdipoInsights**
 
-Is a command-line pipeline for adipocyte detection and analysis from `.ndpi` digital histological whole slide images of adipocyte depots. 
+Is a command-line pipeline for adipocyte detection and analysis from `.ndpi` digital histological images (DHIs) of adipocyte depots. 
 
 ---
 
@@ -72,10 +72,9 @@ Each JSON config (e.g., `Analyzer/configs/subcutaneous_wat.json`) defines key pa
 
 You can edit these values directly in the JSON to customize processing without changing any code.
 
----
 
-### Installation
-#### Using miniconda
+## Installation
+### Using miniconda
 
 1. Clone github repository to local :
     ```python 
@@ -102,11 +101,12 @@ You can edit these values directly in the JSON to customize processing without c
 
 ##  🏃‍♂️ Usage
 
+First go into the cloned directory :
 ```python 
 cd /path/to/AdipoInsights
 ```
 
-#### 1. Directory of slides
+#### 1. Directory of multiple DHIs
 
 ```bash
 script_notebooks/run_adipocytes_pipeline.sh \
@@ -129,19 +129,19 @@ ndpi_path
 Run:
 
 ```bash
-script_notebooks/run_adipocytes_pipeline.sh slides.csv /path/to/output sWAT /path/to/parent_dir
+script_notebooks/run_adipocytes_pipeline.sh /path/to/slides.csv /path/to/output sWAT /path/to/parent_dir
 ```
 
 #### 3. Comma-separated list
 
 ```bash
-script_notebooks/run_adipocytes_pipeline.sh "A.ndpi,B.ndpi,C.ndpi" /out sWAT /parent_dir
+script_notebooks/run_adipocytes_pipeline.sh "A.ndpi,B.ndpi,C.ndpi" /path/to/output_dir sWAT /parent_dir
 ```
 
 #### 4. Single file
 
 ```bash
-script_notebooks/run_adipocytes_pipeline.sh /data/slideX.ndpi /out pWAT /parent_dir
+script_notebooks/run_adipocytes_pipeline.sh /data/slideX.ndpi /path/to/output_dir pWAT /parent_dir
 ```
 
 ## 📝 Output
