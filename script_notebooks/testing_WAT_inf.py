@@ -136,7 +136,7 @@ def main(ndpi_input_arg: str, inf_dir: str, tissue_type: str, parent_dir_arg: st
                 # Steps for tissue_type "pWAT"
                 pipeline.add_step(calculate_pwat_mask,
                     inputs={
-                        'model_seg': model_seg_s2,  # For perigonadal WAT
+                        'model_path': model_seg_s2,  # For perigonadal WAT
                         'resized_file': inference_dir / f'{folder_name}_resized.tif'
                     },
                     outputs={
@@ -188,7 +188,7 @@ def main(ndpi_input_arg: str, inf_dir: str, tissue_type: str, parent_dir_arg: st
                     'wat_region_x20': inference_dir / f'{folder_name}_x20_wat.jpg',
                     'cells_path': inference_dir / f'{folder_name}_cells.jpg'
                 },
-                always_compute=True
+                always_compute=False
             )
             
             try:

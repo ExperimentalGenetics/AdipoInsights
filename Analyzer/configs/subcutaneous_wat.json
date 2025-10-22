@@ -29,9 +29,9 @@
     100000000
   ],
   "cell_segmentation_interval_binary_inv": [
-    300,
-    200000
+    900,
+    8000
   ],
-  "min_adipocyte_intensity": 0.55,
-  "outlier_threshold": -0.45
+  "min_adipocyte_intensity": 0.8,
+  "outlier_threshold": -0.4
 }

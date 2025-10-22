@@ -1,6 +1,6 @@
 {
   "tissue_type": "pWAT",
-  "shape_ratio_thresh":1.9, 
+  "shape_ratio_thresh":2.4, 
   "max_20xsize": 82000,
   "num_tissues": 1,
   "device":"cpu",
@@ -21,11 +21,11 @@
     1000000000000
   ],
   "cell_segmentation_interval_binary_inv": [
-    2200,
-    300000
+    500,
+    100000
   ],
   "min_adipocyte_intensity":0.6,
-  "outlier_threshold": -0.45
+  "outlier_threshold": -0.4
 }
 
 
